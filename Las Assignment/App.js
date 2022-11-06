@@ -1,288 +1,201 @@
-import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+// //import React from "react";
 
-const Ludo = () => {
-    return (
-        <View style={styles.container}>
-            <View style={styles.wrapper}>
-                <View style={styles.sidel}>
-                    <View style={styles.Box1}>
-                        <View style={styles.box1}>
-                            <View style={styles.row}>
-                                <View style={styles.circle}></View>
-                                <View style={styles.circle}></View>
-                            </View>
-                            <View style={styles.row}>
-                                <View style={styles.circle}></View>
-                                <View style={styles.circle}></View>
-                            </View>
-                        </View>
-                        <View>
-                            <View style={styles.side}>
-                                <View style={styles.smallb}></View>
-                                <View style={{ borderWidth: 1, backgroundColor: 'green', borderColor: "rgb(60,60,60)", width: 25, height: 25 }}></View>
-                                <View style={styles.smallb}></View>
-                                <View style={styles.smallb}></View>
-                                <View style={styles.smallb}></View>
-                                <View style={styles.smallb}></View>
-                            </View>
-                            <View style={styles.side}>
-                                <View style={styles.smallb}></View>
-                                <View style={styles.smallgb}></View>
-                                <View style={styles.smallgb}></View>
-                                <View style={styles.smallgb}></View>
-                                <View style={styles.smallgb}></View>
-                                <View style={styles.smallgb}></View>
-                            </View>
-                            <View style={styles.side}>
-                                <View style={styles.smallb}></View>
-                                <View style={styles.smallb}></View>
-                                <View style={{ borderWidth: 1, backgroundColor: 'gray', borderColor: "rgb(60,60,60)", width: 25, height: 25 }}></View>
-                                <View style={styles.smallb}></View>
-                                <View style={styles.smallb}></View>
-                                <View style={styles.smallb}></View>
-                            </View>
-                        </View>
-                    </View>
-                    <View style={styles.sidel2}>
-                        <View style={styles.smallb}></View>
-                        <View style={styles.smallb}></View>
-                        <View style={{ borderWidth: 1, backgroundColor: 'gray', borderColor: "rgb(60,60,60)", width: 25, height: 25 }}></View>
-                        <View style={styles.smallb}></View>
-                        <View style={styles.smallb}></View>
-                        <View style={styles.smallb}></View>
-                    </View>
-                    <View style={styles.sidel2}>
-                        <View style={styles.smallb}></View>
-                        <View style={styles.smallbb}></View>
-                        <View style={styles.smallbb}></View>
-                        <View style={styles.smallbb}></View>
-                        <View style={styles.smallbb}></View>
-                        <View style={styles.smallbb}></View>
-                    </View>
-                    <View style={styles.sidel2}>
-                        <View style={styles.smallb}></View>
-                        <View style={{ borderWidth: 1, backgroundColor: 'blue', borderColor: "rgb(60,60,60)", width: 25, height: 25 }}></View>
-                        <View style={styles.smallb}></View>
-                        <View style={styles.smallb}></View>
-                        <View style={styles.smallb}></View>
-                        <View style={styles.smallb}></View>
-                    </View>
-                </View>
 
-                <View style={styles.Box2}>
-                    <View style={styles.box2}>
-                        <View style={styles.row}>
-                            <View style={styles.circle}></View>
-                            <View style={styles.circle}></View>
-                        </View>
-                        <View style={styles.row}>
-                            <View style={styles.circle}></View>
-                            <View style={styles.circle}></View>
-                        </View>
-                    </View>
-                    <View>
-                        <View style={styles.side}>
-                            <View style={styles.smallb}></View>
-                            <View style={styles.smallb}></View>
-                            <View style={styles.smallb}></View>
-                            <View style={{ borderWidth: 1, backgroundColor: 'gray', borderColor: "rgb(60,60,60)", width: 25, height: 25 }}></View>
-                            <View style={styles.smallb}></View>
-                            <View style={styles.smallb}></View>
-                        </View>
-                        <View style={styles.side}>
+// // export default function fafa() {
+// //     return (
+// //       <View style={styles.container}>
+// //         <Text>Open up App!</Text>
+// //         <StatusBar style="auto" />
+// //       </View>
+// //     );
+// //   }
+// import React from "react";
+// import { View, Button, Text, StyleSheet, TextInput} from 'react-native'
+// import { TouchableOpacity } from "react-native-web";
+// //import dataform from "./Component/dataform"
+// class Form extends React.Component {
+//   constructor() {
+//     super();
+//     this.state = {
+//       Name1: "Name",
+//       phone1: "11",
+//       Name2: "Name1",
+//       phone2: "22",
+//       Name3: "Name2",
+//       phone3: "33",
+//       phonetex:"",
+//       nametex:"",
+//     }
+//   }
+//   Updatename(){
+//  var namx= this.state.nametex
+//  var phox=this.state.phonetex
+//  if(this.state.phone1===phox){
+//  this.setState({
+// Name1: namx
+//  }) 
+//  }
+//  if(this.state.phone2===phox){
+//   this.setState({
+//  Name2: namx
+//   })}
+//   if(this.state.phone3===phox){
+//     this.setState({
+//    Name3: namx
+//     })
+//   }}
+//   render() {
+//     return (
+//       <View style={styles.maincontainer}>
+        
 
-                            <View style={styles.smallrb}></View>
-                            <View style={styles.smallrb}></View>
-                            <View style={styles.smallrb}></View>
-                            <View style={styles.smallrb}></View>
-                            <View style={styles.smallrb}></View>
-                            <View style={styles.smallb}></View>
-                        </View>
-                        <View style={styles.side}>
-                            <View style={styles.smallb}></View>
-                            <View style={styles.smallb}></View>
-                            <View style={styles.smallb}></View>
-                            <View style={styles.smallb}></View>
-                            <View style={styles.smallrb}></View>
-                            <View style={styles.smallb}></View>
-                        </View>
-                    </View>
-                </View>
-            </View>
-            <View style={styles.wrapper}>
-            <View style={styles.sidel}>
-                <View style={styles.Box4}>
-                    <View style={styles.box4}>
-                        <View style={styles.row}>
-                            <View style={styles.circle}></View>
-                            <View style={styles.circle}></View></View>
-                        <View style={styles.row}>
-                            <View style={styles.circle}></View>
-                            <View style={styles.circle}></View></View>
-                    </View>
+//         <Text style={{ borderWidth: 1, width: "20ch", marginBottom: 4, marginTop: 4 }}>{this.state.Name1}
+//         </Text>
+//         <Text style={{ borderWidth: 1, width: "20ch", marginBottom: 4, marginTop: 4 }}>{this.state.Name2}
+//         </Text>
+//         <Text style={{ borderWidth: 1, width: "20ch", marginBottom: 4, marginTop: 4 }}>{this.state.Name3}
+//         </Text>
+//         <View>
+//           <TextInput style={styles.inputstyle} onChangeText={(e)=>{this.setState({nametex:e})}} autoCapatilize="none" autoCorrect={false}></TextInput>
+//           <TextInput style={styles.inputstyle} onChangeText={(c)=>{this.setState({phonetex:c})}} autoCapatilize="none" autoCorrect={false}></TextInput>
+//         <Button title="Edit" onPress={()=>{this.Updatename()}} style={{width:"25ch", borderColor:1, backgroundColor: "rgb(0, 139, 255)" }}></Button>
+//         </View>
+//       </View>
+//     )
+//   }
+// }
+// const styles = StyleSheet.create({
+//   maincontainer:
+//   {
+//     flex: 1,
 
-                </View>
-                <View style={styles.sidel2}>
-                        <View style={styles.smallb}></View>
-                        <View style={styles.smallb}></View>
-                         <View style={styles.smallb}></View>
-                        <View style={styles.smallb}></View>
-                        <View style={styles.smallyb }></View>
-                       
-                        <View style={styles.smallb}></View>
-                    </View>
-                    <View style={styles.sidel2}>
-                        
-                        <View style={styles.smallyb}></View>
-                        <View style={styles.smallyb}></View>
-                        <View style={styles.smallyb}></View>
-                        <View style={styles.smallyb}></View>
-                        <View style={styles.smallyb}></View>
-                        <View style={styles.smallb}></View>
-                    </View>
-                    <View style={styles.sidel2}>
-                        <View style={styles.smallb}></View>
-                        <View style={styles.smallb}></View>
-                        <View style={styles.smallb}></View>
-                        <View style={{ borderWidth: 1, backgroundColor: 'gray', borderColor: "rgb(60,60,60)", width: 25, height: 25 }}></View>
-                       
-                        <View style={styles.smallb}></View>
-                        <View style={styles.smallb}></View>
-                    </View>
-                </View>
-                <View style={styles.Box3}>
-                    <View style={styles.box3}>
-                        <View style={styles.row}>
-                            <View style={styles.circle}></View>
-                            <View style={styles.circle}></View></View>
-                        <View style={styles.row}>
-                            <View style={styles.circle}></View>
-                            <View style={styles.circle}></View></View>
-                    </View>
-                </View>
-            </View>
-        </View>)
+//     fontSize: 14,
+
+//     justifyContent: "center",
+//     marginLeft: "45%",
+//     AlignItems: "center"
+//   },
+//   inputstyle: {
+//     borderWidth: 1,
+//     width: "25ch",
+//     margintop: 4,
+//     marginBottom: 4,
+//     borderColor: "rgba(0,0,0,0.3)",
+//     paddingHorizontal: 15,
+//     paddingVertical: 7,
+//     borderRadius: 1,
+//     fontFamily: "regular",
+//     fontSize: 18,
+//   },
+// //   LoginButton:{
+// //     borderWidth: 1,
+// //     width:"25ch",
+// //     marginTop: 10,
+// //     marginBottom: 5,
+// //     paddingHorizontal:15,
+// //     paddingVertical: 7,
+// //     backgroundColor: "rgb(0, 139, 255)"
+
+// // }
+// })
+
+// export default Form;
+import { StatusBar } from "expo-status-bar";
+import React, { useState } from "react";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  TextInput,
+  Button,
+  TouchableOpacity,
+} from "react-native";
+ 
+export default function App() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+ 
+  return (
+    <View style={styles.container}>
+      <Image style={styles.image} source={require("./assets/Log2.PNG")} />
+ 
+      <StatusBar style="auto" />
+      <View style={styles.inputView}>
+        <TextInput
+          style={styles.TextInput}
+          placeholder="Email."
+          placeholderTextColor="#003f5c"
+          onChangeText={(email) => setEmail(email)}
+        />
+      </View>
+ 
+      <View style={styles.inputView}>
+        <TextInput
+          style={styles.TextInput}
+          placeholder="Password."
+          placeholderTextColor="#003f5c"
+          secureTextEntry={true}
+          onChangeText={(password) => setPassword(password)}
+        />
+      </View>
+ 
+      <TouchableOpacity>
+        <Text style={styles.forgot_button}>Forgot Password?</Text>
+      </TouchableOpacity>
+ 
+      <TouchableOpacity style={styles.loginBtn}>
+        <Text style={styles.loginText}>LOGIN</Text>
+      </TouchableOpacity>
+    </View>
+  );
 }
-
+ 
 const styles = StyleSheet.create({
-
-    container: {
-        flex: 1,
-        backgroundColor: "white",
-        //justifyContent: "center",
-        //marginTop: 100,
-        // alignContent: "center",
-        alignItems: "center"
-    },
-    Row:{
-        flexDirection:'row',
-        backgroundColor:'white',
-        justifyContent:'center'
-    },
-    wrapper: {
-        flexDirection: 'row',
-        justifyContent: 'center',
-        marginTop: 75,
-        backgroundColor: 'white'
-
-    },
-    Row: {
-        flexDirection: 'row',
-        backgroundColor: 'white',
-        justifyContent: 'center'
-    },
-    Box1: {
-        backgroundColor: 'green',
-        height: 150,
-        width: 150
-    },
-    box1: {
-        backgroundColor: 'darkgreen',
-        height: 100,
-        width: 100,
-        margin: 25
-    },
-    Box2: {
-        backgroundColor: 'blue',
-        height: 150,
-        width: 150
-    },
-    box2: {
-        backgroundColor: 'darkblue',
-        height: 100,
-        width: 100,
-        margin: 25
-    },
-    Box3: {
-        backgroundColor: 'red',
-        height: 150,
-        width: 150
-    },
-    box3: {
-        backgroundColor: 'darkred',
-        height: 100,
-        width: 100,
-        margin: 25
-    },
-    Box4: {
-        backgroundColor: 'yellow',
-        height: 150,
-        width: 150
-    },
-    box4: {
-        backgroundColor:  '#8B8000',
-        height: 100,
-        width: 100,
-        margin: 25
-    },
-    circle: {
-        backgroundColor: 'white',
-        height: 20,
-        width: 20,
-        borderRadius: 20,
-        marginLeft: 14,
-        marginTop: 20,
-        marginRight: 14,
-        justifyContent: 'center'
-    },
-    row: {
-        flex: 1,
-        flexDirection: 'row'
-    },
-    side: {
-        flex: 1,
-        flexDirection: 'row'
-    },
-    smallb: {
-        borderWidth: 1, borderColor: "rgb(60,60,60)", width: 25, height: 25
-    },
-    sidel: {
-        flex: 1,
-        flexDirection: "row"
-    },
-    sidel2: {
-        flex: 1,
-        flexDirection: "column"
-    },
-    smallgb: {
-        borderWidth: 1, backgroundColor: 'green', borderColor: "rgb(60,60,60)", width: 25, height: 25
-    },
-    smallbb: {
-        borderWidth: 1, backgroundColor: 'blue', borderColor: "rgb(60,60,60)", width: 25, height: 25
-    },
-    smallrb: {
-        borderWidth: 1, backgroundColor: 'red', borderColor: "rgb(60,60,60)", width: 25, height: 25
-    },
-smallyb:{
-    
-        borderWidth: 1, backgroundColor: 'yellow', borderColor: "rgb(60,60,60)", width: 25, height: 25
-   
-}
-
-
-
-
-})
-
-export default Ludo;
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+ 
+  image: {
+    marginBottom: 80,
+  },
+ 
+  inputView: {
+    backgroundColor: "#FFC0CB",
+    borderRadius: 30,
+    width: "40%",
+    height: 45,
+    marginBottom: 20,
+    alignItems: "center",
+    justifyContent: "center",
+ 
+    alignItems: "center",
+  },
+ 
+  TextInput: {
+    height: 50,
+    flex: 1,
+    padding: 10,
+    marginLeft: 20,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+ 
+  forgot_button: {
+    height: 30,
+    marginBottom: 30,
+  },
+ 
+  loginBtn: {
+    width: "40%",
+    borderRadius: 25,
+    height: 50,
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 40,
+    backgroundColor: "#FF1493",
+  },
+});
